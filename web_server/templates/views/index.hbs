@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sistema de Cotação - Home</title>
+
+        <link rel="icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <div class="main-content">
+            {{> header}}
+        
+            <p>Busque por um ativo</p>
+
+            <form>
+                <input type="text" placeholder="Código do ativo">
+                <button>Buscar</button>
+            </form>  
+
+            <h3></h3>
+            <p id="symbol"> </p>
+            <p id="price"> </p>
+            <p id="open"> </p>
+            <p id="high"> </p>
+            <p id="low"> </p>
+            <p id="close"> </p>
+
+        </div>
+        {{> footer}}
+
+    </body>
+    <script src="/js/appFrontEnd.js"></script>
+</html>
