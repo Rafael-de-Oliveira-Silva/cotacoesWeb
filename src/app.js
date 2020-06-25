@@ -21,7 +21,7 @@ app.use(express.static(publicDirectoryPath));
 //Rota para a página home...
 app.get('',(req, res) => {
     res.render('index',{
-        title: 'Sistema de cotações',
+        title: 'Consulte seu ativo',
         author: 'Rafael Silva'
     })
 });
@@ -37,7 +37,7 @@ app.get('/about',(req, res) => {
 //Rota para uma página de ajuda...
 app.get('/help',(req, res) => {
     res.render('help',{
-        title: 'Conteúdo Help',
+        title: 'Ajuda',
         author: 'Rafael Silva'
     })
 });
@@ -72,8 +72,8 @@ app.get('/cotacoes', (req, res) => {
 //Defindo uma rota para erros... Qualquer rota não definida cairá aqui...
 app.get('*', (req, res) => {
     res.render('404',{
-        title: '404',
-        errorMessage: 'Página não encontrada',
+        title: '404: Página não encontrada!',
+        errorMessage: 'Desculpe. A página solicitada não pode ser encontrada.',
         author: 'Rafael Silva'
     })
 });

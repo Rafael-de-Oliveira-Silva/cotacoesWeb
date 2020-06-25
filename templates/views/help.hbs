@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
     <head>
+        <meta charset="utf-8">
         
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <!-- Site Metas -->
         <title>Sistema de Cotação - Help</title>
+        <meta name="description" content="Ajuda do sistema de cotação"/>
+        <meta name="keywords" content="Rafael de Oliveira Silva, PUC, Cotação de ativos na bolsa de Valores"/>
+        
+        <!-- Site Icons -->
         <link rel="icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="/css/style.css" />
-        <script src="/js/app.js"></script>
-  
+        
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+
+        <!-- Site CSS -->
+        <link rel="stylesheet" href="/css/style.css"/>     
     </head>
     <body>
         <div class="main-content">
             {{> header}}
+
+            <section>
+                <header>
+                    <h2>Limite de consultas</h2>
+                </header>
+                
+                <aside>
+                    <p>Esta aplicação consome os serviços de uma API gratuita, disponibilizada pela <a href="https://www.alphavantage.co/" target="_blank">Alpha Vantage</a>.
+                    É recomendado que você faça solicitações ao serviço da API com moderação (até 5 solicitações por minuto e 500 solicitações por dia) para obter o melhor 
+                    desempenho do serviço.</p>    
+                </aside>
+
+            </section>
+
         </div>
 
         {{> footer}}
 
+        <!-- ALL JS FILES -->
+        <script src="/js/bootstrap.min.js"></script>
     </body>
 </html>

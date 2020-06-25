@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
     <head>
+        <meta charset="utf-8">
+        
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <!-- Site Metas -->
         <title>Sistema de Cotação - Home</title>
+        <meta name="description" content="Pesquisa de ativos no sistema de cotação">
+        <meta name="keywords" content="Rafael de Oliveira Silva, PUC, Cotação de ativos na bolsa de Valores">
+        
+        <!-- Site Icons --> 
+        <link rel="icon" href="/img/favicon.png"/>
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
 
-        <link rel="icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="/css/style.css" />
+        <!-- Site CSS -->
+        <link rel="stylesheet" href="/css/style.css"/>
+
     </head>
     <body>
         <div class="main-content">
             {{> header}}
         
-            <p>Busque por um ativo</p>
-
-            <form>
-                <input type="text" placeholder="Código do ativo">
-                <button>Buscar</button>
+            <form role="form">
+                <div class="form-group">
+                    <label for="lbl-pesquisar">Busque por um ativo</label>
+                    <input type="text" class="form-control" id="symbol" placeholder="Informe o código do ativo...">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">
+                        Buscar <span class="glyphicon glyphicon-search" aria-hidden="true"></span>    
+                    </button>
+                </div>
             </form>  
-
+            
             <h3></h3>
             <p id="symbol"> </p>
             <p id="price"> </p>
@@ -27,8 +47,15 @@
             <p id="close"> </p>
 
         </div>
+
+        <div class="content-search">
+            <p id="data-pesquisa"> </p>
+        </div>
+
         {{> footer}}
 
-    </body>
-    <script src="/js/appFrontEnd.js"></script>
+        <!-- ALL JS FILES -->
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/appFrontEnd.js"></script>
+    </body>   
 </html>

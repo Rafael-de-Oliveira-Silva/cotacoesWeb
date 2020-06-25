@@ -1,10 +1,12 @@
 body{
     color: #333333;
-    font-family: arial;
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
     max-width: 650px;
     margin: 0 auto;
     padding: 0 16px;
-
+    background-color: #222224;
+    color: aliceblue;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -22,13 +24,9 @@ footer{
 }
 
 header{
-    margin-top: 16px;
-    margin-bottom: 48px;
-}
-
-h1{
-    font-size: 64px;
+    margin-top: 48px;
     margin-bottom: 16px;
+
 }
 
 header a{
@@ -37,19 +35,101 @@ header a{
     text-decoration: none;
 }
 
-.portrait{
-    width: 250px;
-}
-
 input {
     border: 1px solid #cccccc;
     padding: 8;
 }
 
-button{
-    cursor: pointer;
-    border: 1px solid #888888;
-    background: #888888;
-    color: white;
-    padding: 8px;
+h1 {
+    font-weight: bold;
+    font-size: 350%;
+}
+
+blockquote {
+    font-family: fantasy;
+    font-style: italic;
+    color: dimgray;
+}
+
+a {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+.menu:hover {
+    background-color: honeydew;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 2em;
+}
+
+.msg-404{
+    text-align: justify;
+    font-size: 18pt;
+    font-weight: bold; 
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px 4em;
+    background-color: #062f4f;
+    border-radius: 5em;
+}
+
+figure img {
+    width: 250px;
+}
+
+figure {
+    width: 250px;
+    margin-left: 0;
+}
+
+.figure-404 {
+    float: left;
+    margin-left: 11em;
+    margin-right: 0;
+    width: 250px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+
+#status {
+    margin-bottom: 2em;
+    border: 2px dimgray solid;
+    border-collapse: collapse;
+}
+
+#status td,
+#status th {
+    border: 2px dimgray solid;
+}
+
+#status tfoot tr {
+    border: none;
+}
+
+#contato label {
+    vertical-align: top;
+    display: inline-block;
+    width: 6em;
+}
+
+label{
+    float: top;
+    width: 10em;
 }

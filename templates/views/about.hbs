@@ -1,22 +1,87 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
     <head>
-        
+        <meta charset="utf-8">
+
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Site Metas -->
         <title>Sistema de Cotação - About</title>
-        <link rel="icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="/css/style.css" />
-        <script src="/js/app.js"></script>
-  
+        <meta name="description" content="Sobre o sistema de cotação">
+        <meta name="keywords" content="Rafael de Oliveira Silva, PUC, Cotação de ativos na bolsa de Valores">
+        
+        <!-- Site Icons -->
+        <link rel="icon" href="/img/favicon.png" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+
+        <!-- Site CSS -->
+        <link rel="stylesheet" href="/css/style.css"/>    
     </head>
     <body>
         
         <div class="main-content">
             {{> header}}
-            <img class="portrait" src="/img/perfil.jpg">
+
+            <p>Sistema desenvolvido para consultar cotações de ativos na bolsa de valores <strong>NASDAQ</strong> (National Association of Securities Dealers Automated Quotations). </p>
+            <p>Este serviço retorna as informações mais recentes sobre preços de um ativo. <a href="http://nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt" target="_blank">Lista ativos</a> negociados na NASDAQ</p>
+            <hr/>
+
+            <section>
+                <header>
+                    <h2>Tecnologias adotadas</h2>
+                </header>
+                
+                <aside>
+                    <h3>Backend</h3>
+                    <p>Desenvolvido em JavaScript com <a href="https://nodejs.org/en/" target="_blank">Node.JS</a>.</p>    
+                </aside>
+
+                <aside>
+                    <h3>API</h3>
+                    <p><a href="https://www.alphavantage.co/" target="_blank">Alpha Vantage</a> é uma API gratuita que oferece +400 bibliotecas.</p>
+                </aside>
+            </section>
+
+            <section>
+                <header>
+                    <h2>Sobre o desenvolvedor</h2>
+                </header>
+                
+                <aside>
+                    <h3>Biografia</h3>
+                    <p>Bacharelado em Sistemas de Informações pela Universidade do Grande Rio (UNIGRANRIO).</p>
+                    <p>Cursando especialização em desenvolvimento Web Full Stack pela PUC Minas</p>
+                </aside>
+
+                <aside>
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><a href="mailto:rafaeldeoliveira88@gmail.com">Email</a></li>
+                    </ul>
+                </aside>
+
+                <aside>
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/rafael-de-oliveira-silva-531767a1" target="_blank">Linkedin.com</a></li>
+                        <li><a href="https://github.com/Rafael-de-Oliveira-Silva" target="_blank">Github.com</a></li>
+                    </ul>
+                </aside>
+                
+                <figure>
+                    <img src="/img/perfil.jpg" alt="Rafael Silva" title="Rafael Silva"/>
+                    <figcaption>Rafael Silva</figcaption>
+                </figure>
+            </section>    
         </div>
             
         {{> footer}}
 
+        <!-- ALL JS FILES -->
+        <script src="/js/bootstrap.min.js"></script>
     </body>
 </html>
